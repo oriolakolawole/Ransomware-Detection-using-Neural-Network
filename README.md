@@ -82,7 +82,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn tensorflow
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   cd Ransomware-Detection-using-Neural-Network
    ```
 2. Place `Ransomware_headers.csv` in the project root.
 3. Install dependencies (see above).
