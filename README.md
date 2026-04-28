@@ -20,7 +20,7 @@ PE Header (1024 bytes) → reshape (32×32) → normalise → RGB (256×256) →
 
 | Notebook | Task | Output Classes |
 |---|---|---|
-| `dataset1n.ipynb` | Binary detection — goodware vs ransomware | 2 classes |
+| `dataset1n.ipynb` | Binary detection | 2 classes |
 | `dataset1family.ipynb` | Multi-class family identification | 26 classes (25 families + goodware) |
 
 ---
