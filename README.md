@@ -48,9 +48,9 @@ Three ImageNet pre-trained CNNs are fine-tuned (frozen base + custom classificat
 
 | Model | Binary Head | Family Head | Optimiser |
 |---|---|---|---|
-| ResNet50 | Dense(128) → Dense(64) → Dense(1, sigmoid) | Dense(128) → Dense(64) → Dense(26, softmax) | Adam |
-| Xception | Dense(256) → Dense(128) → Dense(64) → Dense(1, sigmoid) | Dense(256) → Dense(128) → Dense(64) → Dense(26, softmax) | Adam / Adamax |
-| VGG16 | Dense(128) → Dense(64) → Dense(1, sigmoid) | Dense(256) → Dense(128) → Dense(64) → Dense(26, softmax) | Adam / Adamax |
+| ResNet50 | Dense(128) → Dense(64) → Dense(1, sigmoid) | Dense(128) → Dense(64) → Dense(26, softmax) |
+| Xception | Dense(256) → Dense(128) → Dense(64) → Dense(1, sigmoid) | Dense(256) → Dense(128) → Dense(64) → Dense(26, softmax) |
+| VGG16 | Dense(128) → Dense(64) → Dense(1, sigmoid) | Dense(256) → Dense(128) → Dense(64) → Dense(26, softmax) | 
 
 ---
 
