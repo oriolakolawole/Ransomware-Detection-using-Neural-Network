@@ -47,7 +47,7 @@ PE Header (1024 bytes) → reshape (32×32) → normalise → RGB (256×256) →
 Three ImageNet pre-trained CNNs are fine-tuned (frozen base + custom classification head) for each task:
 
 | Model | Binary Head | Family Head | 
-|---|---|---|---|
+|---|---|---|
 | ResNet50 | Dense(128) → Dense(64) → Dense(1, sigmoid) | Dense(128) → Dense(64) → Dense(26, softmax) |
 | Xception | Dense(256) → Dense(128) → Dense(64) → Dense(1, sigmoid) | Dense(256) → Dense(128) → Dense(64) → Dense(26, softmax) |
 | VGG16 | Dense(128) → Dense(64) → Dense(1, sigmoid) | Dense(256) → Dense(128) → Dense(64) → Dense(26, softmax) | 
