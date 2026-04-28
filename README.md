@@ -1,10 +1,10 @@
-# 🛡️ Ransomware Detection & Family Classification via PE Header Visualisation
+# Ransomware Detection & Family Classification via PE Header Visualisation
 
-A deep learning project that detects ransomware and identifies its family by converting **Windows PE header bytes into images** and applying transfer learning with **ResNet50, Xception, and VGG16**. Two classification tasks are tackled across two notebooks using the same dataset.
+A deep learning project that detects ransomware and identifies its family by converting **Windows PE header bytes into images** and applying transfer learning with **ResNet50, Xception, and VGG16**.
 
 ---
 
-## 💡 Core Idea
+## Core Idea
 
 Each binary executable's PE header (first 1024 bytes) is reshaped into a **32×32 grayscale image**, upscaled to **256×256 RGB**, and fed into pre-trained CNN architectures. The intuition is that malware families share structural byte patterns in their headers that manifest as visually distinguishable textures — making image-based classification a viable approach.
 
@@ -12,9 +12,11 @@ Each binary executable's PE header (first 1024 bytes) is reshaped into a **32×3
 PE Header (1024 bytes) → reshape (32×32) → normalise → RGB (256×256) → CNN
 ```
 
+> [Click Here to view this Project](dataset1n.ipynb)
+
 ---
 
-## 📁 Notebooks
+## Notebooks
 
 | Notebook | Task | Output Classes |
 |---|---|---|
@@ -23,7 +25,7 @@ PE Header (1024 bytes) → reshape (32×32) → normalise → RGB (256×256) →
 
 ---
 
-## 🗂️ Dataset
+## Dataset
 
 **2,157 binary executable samples:**
 
@@ -40,7 +42,7 @@ PE Header (1024 bytes) → reshape (32×32) → normalise → RGB (256×256) →
 
 ---
 
-## 🔬 Models Compared
+## Models Compared
 
 Three ImageNet pre-trained CNNs are fine-tuned (frozen base + custom classification head) for each task:
 
@@ -52,7 +54,7 @@ Three ImageNet pre-trained CNNs are fine-tuned (frozen base + custom classificat
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 Each model is evaluated with a comprehensive set of metrics:
 
@@ -62,11 +64,10 @@ Each model is evaluated with a comprehensive set of metrics:
 - Cohen's Kappa
 - AUC-ROC
 - Confusion matrix heatmap
-- Per-class recall bar chart
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ```bash
 pip install numpy pandas matplotlib seaborn scikit-learn tensorflow
@@ -76,7 +77,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn tensorflow
 
 ---
 
-## 🚀 Usage
+## Usage
 
 1. Clone the repository:
    ```bash
@@ -96,7 +97,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn tensorflow
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | Package | Purpose |
 |---|---|
@@ -107,7 +108,7 @@ pip install numpy pandas matplotlib seaborn scikit-learn tensorflow
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -119,6 +120,6 @@ pip install numpy pandas matplotlib seaborn scikit-learn tensorflow
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project is for **research and educational purposes only**. The models are trained on a specific dataset and should not be used as a standalone malware detection tool in production environments.
